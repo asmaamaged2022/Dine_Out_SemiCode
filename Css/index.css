@@ -1,0 +1,763 @@
+/* ---------------------------Nav----------------------- */
+header nav.navbar {
+  z-index: 1000;
+}
+header nav.navbar button {
+  background-color: transparent;
+  width: 50px;
+  padding: 5px 10px;
+  height: 30px;
+  border: none;
+  outline: none;
+  transition-duration: 0.5s;
+  flex-direction: column;
+  background-image: none;
+}
+header nav.navbar button span {
+  width: 32px;
+  height: 2px;
+  transition-duration: 0.5s;
+}
+header nav.navbar button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+nav.navbar:has(.offcanvas.show) .navbar-toggler span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+nav.navbar:has(.offcanvas.show) .navbar-toggler span:nth-child(2) {
+  opacity: 0;
+}
+nav.navbar:has(.offcanvas.show) .navbar-toggler span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+.offcanvas {
+  background-image: var(--bg);
+}
+.offcanvas-header i {
+  transition-duration: 0.5s;
+}
+.offcanvas-header i:hover {
+  transform: rotate(180deg);
+}
+.offcanvas-body .navbar-nav li.link {
+  padding-left: 0;
+  transition-duration: 1s;
+}
+.offcanvas-body .navbar-nav li.link:hover {
+  padding-left: 15px;
+}
+.offcanvas-body .navbar-nav li.link a {
+  color: white;
+  letter-spacing: 1.5px;
+}
+.offcanvas-body .navbar-nav li.link a:hover {
+  color: var(--mainColor);
+}
+header nav.navbar .offcanvas .social-media ul > *:not(:last-child) {
+  margin-right: 10px;
+}
+header nav.navbar .offcanvas .social-media ul {
+  position: relative;
+}
+header nav.navbar .offcanvas .social-media ul li {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header nav.navbar .offcanvas .social-media ul > li {
+  position: absolute;
+  left: 0;
+  transition-duration: 1.5s;
+  opacity: 0;
+}
+header nav.navbar .offcanvas .social-media ul > :nth-of-type(1) {
+  left: 0;
+  opacity: 1;
+}
+header nav.navbar .offcanvas.show .social-media ul > :nth-of-type(2) {
+  left: 50px;
+  transition-delay: 1.4s;
+  opacity: 1;
+}
+header nav.navbar .offcanvas.show .social-media ul > :nth-of-type(3) {
+  left: 100px;
+  transition-delay: 0.9s;
+  opacity: 1;
+}
+header nav.navbar .offcanvas.show .social-media ul > :nth-of-type(4) {
+  left: 150px;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+header nav.navbar .offcanvas .social-media ul > :nth-of-type(1) a {
+  color: #1877f2;
+}
+header nav.navbar .offcanvas .social-media ul > :nth-of-type(2) a {
+  color: #e4405f;
+}
+header nav.navbar .offcanvas .social-media ul > :nth-of-type(3) a {
+  color: #25d366;
+}
+header nav.navbar .offcanvas .social-media ul > :nth-of-type(4) a {
+  color: #1da1f2;
+}
+header nav.navbar .offcanvas .social-media ul li:hover a {
+  color: var(--mainColor);
+}
+/* ---------------------------header----------------------- */
+header .carousel-inner {
+  background: var(--bg);
+}
+header .carousel-inner > * {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .carousel-inner > :nth-of-type(1) {
+  background-image: url("../images/home-bg.jpg");
+}
+header .carousel-inner > :nth-of-type(2) {
+  background-image: url("../images/slider-bg1.jpg");
+}
+header .carousel-inner > :nth-of-type(3) {
+  background-image: url("../images/chef-bg.png");
+}
+header .carousel-inner > *::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*------------------------------------page-1--------------------------*/
+header .carousel-inner .carousel-caption {
+  position: initial;
+}
+header .carousel-inner > :nth-of-type(1) .carousel-caption h2 {
+  font-size: 90px;
+}
+
+header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+  width: 50%;
+  margin: auto;
+  transition-delay: 0.4s;
+}
+header .carousel-inner > :nth-of-type(1) .carousel-caption a {
+  transition-delay: 0.8s;
+}
+header .carousel-inner > :nth-of-type(1) .carousel-caption h2,
+header .carousel-inner > :nth-of-type(1) .carousel-caption p,
+header .carousel-inner > :nth-of-type(1) .carousel-caption a {
+  transform: scale(0);
+  opacity: 0;
+  transition-duration: 1.5s;
+}
+header .carousel-inner > :nth-of-type(1).active .carousel-caption a,
+header .carousel-inner > :nth-of-type(1).active .carousel-caption h2,
+header .carousel-inner > :nth-of-type(1).active .carousel-caption p {
+  transform: scale(1);
+  opacity: 1;
+}
+/*------------------------------------page2--------------------------*/
+header .carousel-inner > :nth-of-type(2) .carousel-caption {
+  overflow: hidden;
+}
+header .carousel-inner > :nth-of-type(2) .content .image {
+  margin-bottom: -50px;
+  position: relative;
+  width: 50%;
+  /* في هنا سؤال */
+  transform: translateY(-1000px);
+  transition-duration: 1s;
+  z-index: 3;
+}
+header .carousel-inner > :nth-of-type(2).active .content .image {
+  transform: translateY(0%);
+}
+header .carousel-inner > :nth-of-type(2) .carousel-caption .content > h2 {
+  font-size: 90px;
+  font-weight: 800;
+  color: #e4c5a6;
+  transform: translatex(-1000px);
+  transition-duration: 1s;
+}
+header
+  .carousel-inner
+  > :nth-of-type(2).active
+  .carousel-caption
+  .content
+  > h2 {
+  transform: translatex(0%);
+}
+header .carousel-inner > :nth-of-type(2) .content .box1 {
+  transform: scalex(0);
+  transition-duration: 1s;
+}
+header .carousel-inner > :nth-of-type(2).active .content .box1 {
+  transform: scalex(1);
+}
+header .carousel-inner > :nth-of-type(2) .content .box1 > span {
+  border: 3px solid var(--mainColor);
+  border-radius: 20px;
+  display: block;
+}
+
+header .carousel-inner > :nth-of-type(2) .carousel-caption .box1 h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+header .carousel-inner > :nth-of-type(2) .content .box1 p {
+  color: var(--mainColor);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+header .carousel-inner > :nth-of-type(2) .part2 .image {
+  transform: translateY(-1000px);
+  transition-duration: 1s;
+}
+header .carousel-inner > :nth-of-type(2).active .part2 .image {
+  transform: translateY(0%);
+}
+header .carousel-inner > :nth-of-type(2) .part2 img {
+  animation: animat_1 10s linear infinite;
+}
+/*------------------------------------page3--------------------------*/
+header .carousel-inner > :nth-of-type(3) .part1 .image {
+  transform: translateX(-1000px);
+  transition-duration: 1s;
+  width: 75%;
+}
+header .carousel-inner > :nth-of-type(3).active .part1 .image {
+  transform: translateX(0%);
+}
+header .carousel-inner > :nth-of-type(3) .part1 img {
+  animation-name: animat_2;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+header .carousel-inner > :nth-of-type(3) .part2 h2 {
+  font-size: 50px;
+  font-weight: 800;
+  transform: translatey(-1000px);
+  transition-duration: 1s;
+}
+header .carousel-inner > :nth-of-type(3).active .part2 h2 {
+  transform: translatey(0%);
+}
+header .carousel-inner > :nth-of-type(3) .part2 .box > span {
+  width: 0%;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  height: 5px;
+  display: block;
+  transition-duration: 1s;
+}
+header .carousel-inner > :nth-of-type(3).active .part2 .box > span {
+  width: 50%;
+}
+
+header .carousel-inner > :nth-of-type(3) .part2 .icon .item {
+  width: 80%;
+  margin: auto;
+}
+header .carousel-inner > :nth-of-type(3) .part2 .box > p,
+header .carousel-inner > :nth-of-type(3) .part2 .icon > * {
+  transform: translateY(100%);
+  transition-duration: 1s;
+  opacity: 0;
+}
+header .carousel-inner > :nth-of-type(3).active .part2 .box > p,
+header .carousel-inner > :nth-of-type(3).active .part2 .icon > :nth-of-type(1),
+header .carousel-inner > :nth-of-type(3).active .part2 .icon > :nth-of-type(2),
+header .carousel-inner > :nth-of-type(3).active .part2 .icon > :nth-of-type(3) {
+  transform: translateY(0%);
+  opacity: 1;
+}
+header .carousel-inner > :nth-of-type(3).active .part2 .icon > :nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+header .carousel-inner > :nth-of-type(3).active .part2 .icon > :nth-of-type(3) {
+  transition-delay: 0.2s;
+}
+header .carousel-inner > :nth-of-type(3) .carousel-caption .part2 .box a {
+  margin-left: 0;
+  transform: scale(0);
+  transition-duration: 1s;
+}
+header .carousel-inner > :nth-of-type(3).active .carousel-caption .part2 a {
+  transform: scale(1);
+}
+/*----------------------------button in page--------------------------- */
+header .carousel-inner .carousel-caption a {
+  background-color: transparent;
+  padding: 7px 30px;
+  border: 2px solid var(--mainColor);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+header .carousel-inner .carousel-caption a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor);
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-caption a:hover::before {
+  left: 0%;
+}
+header .carousel-inner .carousel-caption a span {
+  position: relative;
+  z-index: 4;
+  color: var(--mainColor);
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-caption a:hover span {
+  color: white;
+}
+/*-------------------------------carousel_button---------------------*/
+.carousel-btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 140px;
+  z-index: 5;
+}
+.carousel-prev,
+.carousel-next {
+  background-image: var(--bg);
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.carousel-btn i {
+  color: white;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+.carousel-prev:hover i,
+.carousel-next:hover i {
+  color: var(--mainColor);
+  transform: scale(1.2);
+}
+/* --------------------------items----------------------- */
+#items {
+  overflow: auto;
+  scrollbar-width: none;
+}
+#items .content .item {
+  padding: 10px 25px;
+  background-image: var(--About);
+  border: 1px solid white;
+}
+#items .content .image {
+  width: 45px;
+  margin: auto;
+}
+/* --------------------------About----------------------- */
+#About .container .content h4 {
+  color: var(--mainColor);
+}
+#About .container .content h2 {
+  font-size: 30px;
+  width: 75%;
+}
+#About .container .content .box > span {
+  width: 50%;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  height: 5px;
+  display: block;
+}
+#About .container .content .box .item .image {
+  width: 25px;
+}
+#About .container .content a {
+  background-color: transparent;
+  padding: 7px 30px;
+  border: 2px solid var(--mainColor);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: fit-content;
+  margin-left: 15px;
+}
+#About .container .content a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor);
+  transition-duration: 1s;
+}
+#About .container .content a:hover::before {
+  left: 0%;
+}
+#About .container .content a span {
+  position: relative;
+  z-index: 4;
+  color: var(--mainColor);
+  transition-duration: 1s;
+}
+#About .container .content a:hover span {
+  color: white;
+}
+#About .container .part2 .image span {
+  border: 5px solid var(--mainColor);
+  display: block;
+  animation-name: animat_3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  width: 150px;
+  height: 150px;
+}
+/* --------------------------Testimonials---------------------- */
+#Testimonials {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#Testimonials video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#Testimonials .container {
+  position: relative;
+  z-index: 3;
+}
+#Testimonials .container .content .text {
+  width: 75%;
+}
+#Testimonials .container .content .text span {
+  width: 300px;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  height: 3px;
+  display: block;
+  margin: auto;
+}
+#Testimonials .container .content .box .image {
+  width: 60px;
+  margin: auto;
+}
+#Testimonials .container .content .box .item {
+  background: linear-gradient(
+    to right,
+    rgb(44, 83, 100, 0.6),
+    rgb(32, 58, 67, 0.6),
+    rgb(15, 32, 39, 0.6)
+  );
+  border-radius: 20px;
+  max-width: 280px;
+}
+#Testimonials::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+/* --------------------------Menu---------------------- */
+#Menu .nav-tabs {
+  width: fit-content;
+  border: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+}
+#Menu .nav-item {
+  background-image: var(--About);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 150px;
+  position: relative;
+}
+
+#Menu .nav-item .nav-link.active {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+#Menu .nav-item .nav-link.active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  border: 9px solid transparent;
+  border-right-color: white;
+}
+
+#Menu .nav-item .image {
+  width: 40px;
+  margin: auto;
+}
+
+#Menu .nav-item .nav-link img {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+#Menu .nav-item .nav-link.active img {
+  transform: scale(1.5);
+}
+#Menu .nav-item .nav-link h6 {
+  margin-top: 20px;
+}
+
+#Menu .tab-content i {
+  color: var(--mainColor);
+}
+#Menu .tab-content .tab-pane .item {
+  border: 2px solid var(--mainColor);
+  max-width: 280px;
+  margin: auto;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+#Menu .tab-content .tab-pane .item:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 5px #f1b60166,
+    0 10px #f1b6014d,
+    0 15px #f1b60133,
+    0 20px #f1b6011a,
+    0 25px #f1b6010d,
+    -5px 5px 40px #f1b60166;
+}
+#Menu .tab-content .tab-pane .item .head :nth-child(1),
+#Menu .tab-content .tab-pane .item .head :nth-child(2) {
+  transform: scale(0);
+  transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane.show .item .head :nth-child(1),
+#Menu .tab-content .tab-pane.show .item .head :nth-child(2) {
+  transform: scale(1);
+}
+#Menu .tab-content .tab-pane .item .body .size,
+#Menu .tab-content .tab-pane .item .body .rate,
+#Menu .tab-content .tab-pane .item .body .price {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane.show .item .body .size,
+#Menu .tab-content .tab-pane.show .item .body .rate,
+#Menu .tab-content .tab-pane.show .item .body .price {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+#Menu .tab-content .tab-pane .item .body .size > :nth-child(2),
+#Menu .tab-content .tab-pane .item .body .rate > :nth-child(2),
+#Menu .tab-content .tab-pane .item .body .price > :nth-child(2) {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  overflow: hidden;
+}
+#Menu .tab-content .tab-pane.show .item .body .size > :nth-child(2),
+#Menu .tab-content .tab-pane.show .item .body .rate > :nth-child(2),
+#Menu .tab-content .tab-pane.show .item .body .price > :nth-child(2) {
+  transform: translateX(0%);
+  opacity: 1;
+}
+#Menu .tab-content .tab-pane .item .body .rate > :nth-child(2) {
+  position: relative;
+}
+#Menu .tab-content .tab-pane .item .body .rate i {
+  transform: translatey(50%);
+  position: absolute;
+  transition-duration: 1s;
+  left: 0px;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(2) {
+  transition-delay: 1.5s;
+  left: 25px;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(3) {
+  transition-delay: 2s;
+  left: 50px;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(4) {
+  transition-delay: 2.5s;
+  left: 75px;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(5) {
+  transition-delay: 3s;
+  left: 100px;
+}
+/* --------------------------team---------------------- */
+#Team .content .item {
+  width: 80%;
+  margin: auto;
+}
+#Team .content .item .up {
+  max-width: 300px;
+  height: 400px;
+  margin: auto;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 0.5s;
+}
+#Team .content .box1 .item .up {
+  background-image: url("../images/team/photo1.jpeg");
+}
+
+#Team .content .box2 .item .up {
+  background-image: url("../images/team/photo2.jpeg");
+}
+
+#Team .content .box3 .item .up {
+  background-image: url("../images/team/photo3.jpeg");
+}
+#Team .content .item:hover .up {
+  transform: skewy(7deg);
+}
+#Team .content .item .down {
+  max-width: 350px;
+  margin: auto;
+  background: var(--bg);
+  position: relative;
+  top: -20px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  transition-duration: 0.5s;
+}
+#Team .content .item .down h2 {
+  color: var(--mainColor);
+  font-size: 25px;
+}
+#Team .content .item:hover .down {
+  top: -100px;
+  background: var(--mainColor);
+}
+#Team .content .item:hover .down h2 {
+  color: white;
+}
+/* --------------------------order---------------------- */
+#Order {
+  background-image: url("../images/bg_wood.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Order .content .part1{
+  width: 75%;
+  background-color: #333333;
+  border-radius: 20px;
+}
+#Order .content .part1 .item {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/chef-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--mainColor);
+}
+#Order .content .part1 form{
+width: 80%;
+}
+.form-control{
+  border: white;
+}
+.input-group-text{
+  background-color: white;
+}
+#Order .content .part1 form input:focus,
+#Order .content .part1 form input:focus{
+box-shadow: none;
+}
+#Order .content .part1 form textarea{
+  height: 250px;
+}
+#Order .content .part1 form button {
+  background-color: transparent;
+  padding: 7px 30px;
+  border: 2px solid var(--mainColor);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+ 
+}
+#Order .content .part1 form button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor);
+  transition-duration: 1s;
+}
+#Order .content .part1 form button:hover::before {
+  left: 0%;
+}
+#Order .content .part1 form button span {
+  position: relative;
+  z-index: 4;
+  color: var(--mainColor);
+  transition-duration: 1s;
+}
+#Order .content .part1 form button:hover span {
+  color: white;
+}
+#Order .content .part2 img {
+  position: relative;
+  animation-name: animat_4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+/* --------------------------footer---------------------- */
+footer {
+  background-color: #333333;
+  border-top: 1px solid #2f2b63;
+}

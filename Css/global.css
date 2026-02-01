@@ -1,0 +1,57 @@
+:root {
+  --mainColor: #f1b601;
+  --bg: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  --About: radial-gradient(#2c5364, #203a43, #0f2027);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Poppins, sans-serif;
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+}
+.regular {
+  font-family: Poppins, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    Dancing Script,
+    cursive;
+}
+.title h5 {
+  color: var(--mainColor);
+}
+.title h2 {
+  font-family: var(--regular);
+  font-size: 40px;
+}
+.title span {
+  height: 3px;
+  width: 70px;
+  border-radius: 5px;
+  margin-inline: 5px;
+}
+sup {
+  color: var(--mainColor);
+}

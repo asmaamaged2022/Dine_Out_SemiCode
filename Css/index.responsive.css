@@ -1,0 +1,324 @@
+@media (max-width: 1300px) {
+  /* ---------------------------header----------------------- */
+  /*-------------------------- -page-1--------------------------*/
+  header .carousel-inner > :nth-of-type(1) .carousel-caption h2 {
+    font-size: 38px;
+  }
+  header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+    width: 100%;
+    font-size: 12px;
+  }
+  /*------------------------------------page2--------------------------*/
+  header .carousel-inner > :nth-of-type(2) .content .image {
+    margin-bottom: -30px;
+    width: 40%;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content > h2 {
+    font-size: 55px;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .box1 h2 {
+    font-size: 13px;
+  }
+  header .carousel-inner > :nth-of-type(2) .content .box1 p {
+    font-size: 25px;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption a {
+    padding: 5px 20px;
+  }
+  header .carousel-inner > :nth-of-type(3) .carousel-caption .part1 .image,
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .part2 .image {
+    display: none;
+  }
+  /*-------------------------------carousel_button---------------------*/
+  .carousel-btn {
+    bottom: 5%;
+    right: 5%;
+    width: 100px;
+  }
+  .carousel-prev,
+  .carousel-next {
+    height: 40px;
+    width: 40px;
+  }
+  /*---------------------------------page3--------------------------*/
+  header .carousel-inner > :nth-of-type(3) .part2 h2 {
+    font-size: 20px;
+  }
+  header .carousel-inner > :nth-of-type(3) .part2 .box > p {
+    font-size: 12px;
+  }
+  header .carousel-inner > :nth-of-type(3) .carousel-caption a {
+    padding: 5px 20px;
+  }
+    /* --------------------------items----------------------- */
+#items .content .item{
+  width: 115px;
+}
+  /* --------------------------About----------------------- */
+  #About .container .content h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+  /* --------------------------Testimonials---------------------- */
+
+  #Testimonials {
+    background-attachment: fixed;
+    background-image: url("../images/video_image-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: initial;
+  }
+  #Testimonials video {
+    display: none;
+  }
+  #Testimonials .container .content .text {
+    width: 100%;
+  }
+  #Testimonials .container .content .text span {
+    width: 200px;
+  }
+  #Testimonials .container .content .text p {
+    font-size: 12px;
+  }
+  /* --------------------------Menu---------------------- */
+  #Menu .content {
+    flex-direction: column;
+  }
+  #Menu .cover {
+    overflow: auto;
+  }
+  #Menu .cover::-webkit-scrollbar {
+    display: none;
+  }
+  #Menu .nav-tabs {
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: nowrap;
+    width: max-content;
+    margin-bottom: 40px;
+  }
+  #Menu .nav-item {
+    background-image: var(--About);
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    width: 120px;
+    height: 120px;
+  }
+  #Menu .nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    border: 15px solid transparent;
+    border-bottom-color: white;
+  }
+  /* --------------------------team---------------------- */
+  #Team .content .item {
+    width: 90%;
+  }
+  #Team .content .item .up {
+    max-width: 220px;
+  }
+  #Team .content .item .down {
+    max-width: 250px;
+  }
+  #Team .content .item .down h2 {
+    font-size: 23px;
+  }
+  #Team .content .item .down h5 {
+    font-size: 15px;
+  }
+  /* --------------------------order---------------------- */
+#Order .content .part1{
+  width: 95%;}
+  #Order .content .part2{
+  display: none;
+}
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+  /* ---------------------------header----------------------- */
+  /*-------------------------- -page-1--------------------------*/
+  header .carousel-inner > :nth-of-type(1) .carousel-caption h2 {
+    font-size: 50px;
+  }
+  header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+    width: 90%;
+    font-size: 12px;
+  }
+  /*------------------------------------page2--------------------------*/
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content > h2 {
+    font-size: 60px;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .box1 h2 {
+    font-size: 15px;
+  }
+  /*---------------------------------page3--------------------------*/
+  header .carousel-inner > :nth-of-type(3) .part2 h2 {
+    font-size: 25px;
+  }
+  header .carousel-inner > :nth-of-type(3) .part2 .icon .item {
+    width: 70%;
+  }
+  /* --------------------------team---------------------- */
+  #Team .content .item {
+    width: 80%;
+  }
+  #Team .content .item .up {
+    max-width: 280px;
+  }
+  #Team .content .item .down {
+    max-width: 320px;
+  }
+  #Team .content .item .down h2 {
+    font-size: 25px;
+  }
+  #Team .content .item .down h5 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+  /* ---------------------------header----------------------- */
+  /*-------------------------- -page-1--------------------------*/
+  header .carousel-inner > :nth-of-type(1) .carousel-caption h2 {
+    font-size: 60px;
+  }
+  header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+    width: 80%;
+  }
+  /*------------------------------------page2--------------------------*/
+  header .carousel-inner > :nth-of-type(2) .content .image {
+    width: 50%;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content {
+    width: 70%;
+    margin: auto;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content > h2 {
+    font-size: 60px;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .box1 h2 {
+    font-size: 14px;
+  }
+  /*---------------------------------page3--------------------------*/
+  header .carousel-inner > :nth-of-type(3) .part2 h2 {
+    font-size: 30px;
+  }
+  header .carousel-inner > :nth-of-type(3) .part1 .image {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  /* ---------------------------header----------------------- */
+  /*-------------------------- -page-1--------------------------*/
+  header .carousel-inner > :nth-of-type(1) .carousel-caption h2 {
+    font-size: 70px;
+  }
+  header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+    width: 75%;
+  }
+  /*------------------------------------page2--------------------------*/
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content {
+    width: 100%;
+  }
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .content > h2 {
+    font-size: 60px;
+  }
+  header .carousel-inner > :nth-of-type(3) .carousel-caption .part1 .image,
+  header .carousel-inner > :nth-of-type(2) .carousel-caption .part2 .image {
+    display: block;
+  }
+  /*-------------------------------carousel_button---------------------*/
+  .carousel-btn {
+    bottom: 5%;
+    right: 5%;
+    width: 120px;
+  }
+  .carousel-prev,
+  .carousel-next {
+    height: 45px;
+    width: 45px;
+  }
+  /* --------------------------Testimonials---------------------- */
+
+  #Testimonials {
+    height: 500px;
+  }
+  #Testimonials video {
+    display: block;
+  }
+
+  #Testimonials .container .content .box .item h4 {
+    font-size: 20px;
+  }
+  #Testimonials .container .content .text {
+    width: 75%;
+  }
+  /* --------------------------team---------------------- */
+  #Team .content .item {
+    width: 100%;
+  }
+  #Team .content .item .up {
+    max-width: 190px;
+    height: 350px;
+  }
+  #Team .content .item .down {
+    max-width: 300px;
+  }
+  #Team .content .item .down h2 {
+    font-size: 17px;
+  }
+  #Team .content .item .down h5 {
+    font-size: 15px;
+  }
+    /* --------------------------order---------------------- */
+#Order .content .part2{
+  display: initial;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  /* ---------------------------header----------------------- */
+  /*----------------------------page-1--------------------------*/
+  header .carousel-inner > :nth-of-type(1) .carousel-caption p {
+    width: 60%;
+    font-size: 15px;
+  }
+    /* --------------------------team---------------------- */
+ 
+  #Team .content .item .up {
+    max-width: 250px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+  /*---------------------------------page3--------------------------*/
+  header .carousel-inner > :nth-of-type(3) .part1 .image {
+    width: 75%;
+  }
+  /* --------------------------Menu---------------------- */
+  #Menu .content {
+    flex-direction: row;
+  }
+  #Menu .cover {
+    overflow: unset;
+  }
+  #Menu .nav-tabs {
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 0px;
+  }
+  #Menu .nav-item {
+    background-image: var(--About);
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    height: 150px;
+    width: auto;
+  }
+}

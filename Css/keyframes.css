@@ -1,0 +1,53 @@
+@keyframes animat_1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animat_2 {
+  0% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes animat_3 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes animat_4 {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  25% {
+    opacity: 1;
+    bottom: 20px;
+    left: 0px;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 0;
+    left: 0px;
+  }
+75%{
+   opacity: 1;
+    bottom: 0;
+    left: 1000px;
+}
+  100% {
+    opacity: 1;
+    bottom: 0;
+    left: 1000px;
+  }
+}
