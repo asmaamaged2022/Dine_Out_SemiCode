@@ -277,7 +277,7 @@ header .carousel-inner > :nth-of-type(3) .part2 .icon .item {
 }
 header .carousel-inner > :nth-of-type(3) .part2 .box > p,
 header .carousel-inner > :nth-of-type(3) .part2 .icon > * {
-  transform: translateY(100%);
+  transform: translateY(50%);
   transition-duration: 1s;
   opacity: 0;
 }
