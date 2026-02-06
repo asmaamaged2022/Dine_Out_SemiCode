@@ -708,7 +708,7 @@ width: 80%;
   background-color: white;
 }
 #Order .content .part1 form input:focus,
-#Order .content .part1 form input:focus{
+#Order .content .part1 form textarea:focus{
 box-shadow: none;
 }
 #Order .content .part1 form textarea{
