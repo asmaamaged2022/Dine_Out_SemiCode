@@ -112,6 +112,10 @@ header nav.navbar .offcanvas .social-media ul li:hover a {
   color: var(--mainColor);
 }
 /* ---------------------------header----------------------- */
+header .carousel-item{
+   height: 100vh;
+  height: 100dvh;
+}
 header .carousel-inner {
   background: var(--bg);
 }
