@@ -520,6 +520,16 @@ header .carousel-inner .carousel-caption a:hover span {
   outline: none;
   box-shadow: none;
 }
+#Menu .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  border: 0px solid transparent;
+  border-right-color: white;
+  transition-duration: .5s;
+}
 #Menu .nav-item .nav-link.active::before {
   content: "";
   position: absolute;
@@ -717,6 +727,7 @@ box-shadow: none;
 }
 #Order .content .part1 form textarea{
   height: 250px;
+  resize: none;
 }
 #Order .content .part1 form button {
   background-color: transparent;
@@ -763,5 +774,4 @@ box-shadow: none;
 /* --------------------------footer---------------------- */
 footer {
   background-color: #333333;
-  border-top: 1px solid #2f2b63;
 }

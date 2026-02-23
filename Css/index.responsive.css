@@ -105,6 +105,16 @@
     width: 120px;
     height: 120px;
   }
+    #Menu .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    border: 0px solid transparent;
+    border-bottom-color: white;
+  }
   #Menu .nav-item .nav-link.active::before {
     content: "";
     position: absolute;
